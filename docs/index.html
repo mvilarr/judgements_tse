@@ -7,17 +7,17 @@
     <title>Story template</title>
 
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
     <style>
         body {
             margin: 0;
             font-size: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-family: "Source Serif 4", serif;;
             text-rendering: optimizeLegibility;
+            
         }
 
         .content {
@@ -26,11 +26,46 @@
         }
 
         .header {
-            padding: 3em 0;
+            position: relative;
+            margin-bottom: 2em;
+            overflow: hidden;
         }
 
+        .header img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+        }
+
+        .title-block {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 2em;
+            margin: 0;
+        }
+        .photo-credit {
+            position: absolute;
+            bottom: 0.5em;
+            right: 0.8em;
+            color: rgba(rgb(216, 216, 216));
+            font-size: 0.7em;
+            margin: 0;
+}
         a {
-            color: #f05349;
+            color: #5c41ab;
         }
 
         .footer {
@@ -53,16 +88,25 @@
             color: #666;
         }
 
-        h1 {
-            font-family: 'Lora', Georgia, serif;
-            font-weight: bold;
-            font-size: 3em;
-            line-height: 1.1;
-        }
+       
+          .header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+        
 
         .subhead {
-            font-family: 'Lora', Georgia, serif;
-        }
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    max-width: 700px;
+    margin: 0.5em auto 0;
+}
 
         iframe,
         img,
@@ -96,6 +140,7 @@
             text-align: center;
         }
 
+
         /* margin on mobile */
         @media (max-width: 640px) {
             body {
@@ -111,35 +156,42 @@
 </head>
 
 <body>
-    <div class="content">
-        <div class="header">
+    <div class="header">
+        <img src="images/tse_sede_1.jpg" alt="Sede do TSE">
+        <div class="header-overlay"></div>
+        <div class="title-block">
             <h1>Electoral Reform Sponsors Belong to Two of Brazil's Most-Fined Political Parties</h1>
             <p class="subhead">PSDB and MDB rank among the ten political parties that have accumulated the highest electoral fines over the past 15 years</p>
         </div>
+        <p class="photo-credit">Photo: Luiz Roberto/TSE</p>
+    </div>
+    <div class="content">
         <div class="byline">
-            <p>By Marcela Villar</p>
+            <p>By <a href="https://github.com/mvilarr">Marcela Villar</a> | 28 June 2026</p>
         </div>
-        <p>Months before Brazil's presidential election, scheduled for October, Brazil's Chamber of Deputies approved without prior notice on the legislative agenda a bill that it’s considered a mini electoral reform. 
+        <p>Months before Brazil's presidential election, scheduled for October 2026, <strong>Brazil's Chamber of Deputies</strong> <a href="https://www.camara.leg.br/noticias/1274035-camara-aprova-minirreforma-eleitoral-que-preve-mudancas-na-prestacao-de-contas-dos-partidos/"> approved a bill </a> without notice on the legislative agenda, which is considered a mini electoral reform. 
 </p>
-        <p>One of the proposed changes would cap fines imposed by Brazil's Electoral Court at R$30,000 (about US$5,500)—a sharp reduction from the current rule established by the Political Parties Law. Today, when a party's financial statements are rejected, it must repay the amount deemed irregular plus an additional 20% fine. 
+        <p>One of the proposed changes would cap fines imposed by <strong>Brazil's Electoral Court</strong> at R$30,000 (about US$5,500)—a sharp reduction from the current rule established by the Political Parties Law. Today, when a party's financial statements are rejected, it must repay the amount deemed irregular in addition to a 20% fine. 
 </p>
-        <p>The bill was introduced by federal representatives Pedro Lucas Fernandes (União Brasil), Adolfo Viana (PSDB) and Isnaldo Bulhões Jr. (MDB). 
+        <p>The bill was introduced by federal representatives <a href="https://www.camara.leg.br/deputados/122974"> Pedro Lucas Fernandes</a> (União Brasil), <a href="https://www.camara.leg.br/deputados/204560">Adolfo Viana</a> (PSDB) and <a href="https://www.camara.leg.br/deputados/204436"> Isnaldo Bulhões Jr</a> (MDB). 
 </p>
-        <p>Coincidentially, PSDB and MDB rank among the ten political parties that have accumulated the highest electoral fines over the past 15 years, according to an analysis of the most recent public data from Brazil's Superior Electoral Court (TSE) on annual party finance judgments. </p>
+        <p>Coincidentially, <strong>PSDB</strong> and <strong>MDB</strong> rank among the ten political parties that have accumulated the highest electoral fines over the past 15 years, according to an analysis of the most recent public data from <strong>Brazil's Superior Electoral Court (TSE)</strong> on annual party finance judgments. </p>
 
         <p>The analysis covers 2010—when Brazil introduced its electronic finance reporting system—through 2024, the latest year available. Parties must submit their 2025 financial statements to the Electoral Court by June 30.
 </p>
-        <p>MDB, government-aligned, has accumulated R$16.2 million (about US$3.2 million) in fines, while PSDB, a center-right party, has accumulated R$5 million (about US$1 million). 
+        <p><strong>MDB</strong>, which is government-aligned, has accumulated R$16.2 million (about US$3.2 million) in fines, while <strong>PSDB</strong>, a center-right party, has accumulated R$5 million (about US$1 million). 
 </p>
 
-        <p>The Workers' Party (PT), from President Luiz Inácio Lula da Silva's, tops the ranking with R$21.1 million (about US$4.2 million) in accumulated fines—roughly twice the historical average. Altogether, Brazil's 39 registered political parties have accumulated nearly R$157 million (about US$31 million) in electoral fines.
+        <p>The Workers' Party (PT), from President <strong>Luiz Inácio Lula da Silva's</strong>, tops the ranking with R$21.1 million (about US$4.2 million) in accumulated fines—roughly twice the historical average. Altogether, Brazil's 39 registered political parties have accumulated nearly <strong>R$157 million</strong> (about US$31 million) in electoral fines.
 </p>
-       
+       <p></p>
 
         <iframe title="Electoral Reform Sponsors Belong to Two of Brazil's Most-Fined Political Parties (2010-2024)" aria-label="Bar Chart" id="datawrapper-chart-4UfWN" src="https://datawrapper.dwcdn.net/4UfWN/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="379" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
 
-        <p>The bill would also introduce a statute of limitations for the Electoral Court to judge parties' financial statements—a deadline that currently does not exist. Under the proposal, if the court does not issue a ruling within one year, the case would automatically prescribe.</p>
-        <p>According to TSE data, only 25% of annual financial reports have been judged within one year. On average, the court takes 3.7 years to reach a decision, while roughly one-third of cases have remained pending for more than 10 years.
+        <p></p>
+
+        <p>The bill would also introduce a statute of limitations for the Electoral Court to judge parties' financial statements—a deadline that currently does not exist. Under the proposal, a case would automatically prescribe if the court does not issue a ruling within one year.</p>
+        <p>According to <strong>TSE</strong> data, only 25% of annual financial reports have been judged within one year. On average, the court takes 3.7 years to reach a decision, while roughly one-third of cases have remained pending for more than 10 years.
 </p>
         <p>Of the 731 annual financial statements analyzed, 61% remain pending.</p>
         
@@ -150,73 +202,29 @@
             <li>1.6% were fully approved without restrictions
             <li>1.4% were never submitted</li>
         </ul>
-
+        <p></p>
         <iframe title="Over half of political parties’ financing reports unjudged by Brazil’s TSE" aria-label="Bar Chart" id="datawrapper-chart-XMZhD" src="https://datawrapper.dwcdn.net/XMZhD/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="329" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+        <p></p>
 
-
-        <p>The Brazilian Communist Party (PCB) had its financial statements rejected nine times between 2010 and 2024, the highest number among all political parties. It is followed by MOBILIZA (formerly PMN), PRTB, PCO, DC, PHS (now Podemos), PDT, Cidadania (formerly PPS), PTB, and DEM (now União Brasil).</p>
-        
+        <p><strong>The Brazilian Communist Party (PCB)</strong> had its financial statements rejected nine times between 2010 and 2024, the highest number among all political parties. It is followed by MOBILIZA (formerly PMN), PRTB, PCO, DC, PHS (now Podemos), PDT, Cidadania (formerly PPS), PTB, and DEM (now União Brasil).</p>
+        <p></p>
         <iframe title="Top 10 Political Parties with Disapproved Financial Statements (2010–2024)" aria-label="Bar Chart" id="datawrapper-chart-4jwr4" src="https://datawrapper.dwcdn.net/4jwr4/1/" scrolling="no" frameborder="0" style="border: none;" width="600" height="360" data-external="1"></iframe>
-        
+        <p></p>
         <p>Some parties failed to submit financial statements altogether. This occurred 10 times during the period analyzed. DEM (now União Brasil) and PCO each failed to file reports three times. PCB failed to submit reports twice, while PRP (later Patriota) and UP each failed to file once.
 </p>
         <iframe title="5 Parties Failed to File Financial Statements (2010-2024)" aria-label="Column Chart" id="datawrapper-chart-clQC3" src="https://datawrapper.dwcdn.net/clQC3/1/" scrolling="no" frameborder="0" style="border: none;" width="590" height="476" data-external="1"></iframe>
 
         <p>The bill would also require the automatic approval with reservations of financial statements when the identified irregularities do not exceed 10% of a party's annual revenue.
 </p>
-        <p>In addition, it would prohibit the seizure of resources from the Party Fund and the Special Campaign Finance Fund (FEFC) for any purpose. The proposal would also allow candidates to send automated campaign messages to previously registered phone numbers.
+        <p>In addition, it would prohibit the seizure of resources from the Party Fund and the <strong>Special Campaign Finance Fund (FEFC)</strong> for any purpose. The proposal would also allow candidates to send automated campaign messages to previously registered phone numbers.
 </p>
 
-        <p>The bill was approved by the Chamber of Deputies on May 19 and is currently under consideration in the Senate (Bill PL 4822/2025). To become law, it must be approved by the Senate and then signed by the President.
+        <p>The bill was approved by the Chamber of Deputies on May 19 and is currently under consideration in the Senate (<a href="https://www.congressonacional.leg.br/materias/materias-bicamerais/-/ver/pl-4822-2025">Bill 4822/2025</a>). To become law, it must be approved by the Senate and then signed by the President.
 </p>
 
-        <figure>
-            <img
-                src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
-            <figcaption>This is an image caption</figcaption>
-        </figure>
-        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-            numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-            veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-            consequatur?</p>
-    </div>
-    <div class="full-width">
-        <figure>
-            <img
-                src="https://static01.nyt.com/images/2024/02/01/multimedia/01eu-hungary-orban-2-ghkw/01eu-hungary-orban-2-ghkw-superJumbo.jpg?quality=75&auto=webp">
-            <figcaption>This is another image caption, but this time it's a full-width image</figcaption>
-        </figure>
-    </div>
-    <div class="content">
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
-            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
-            omnis dolor repellendus.</p>
-    </div>
-    <div class="full-width">
-        <figure>
-            <video src="bg-video.mp4" preload="auto" tabindex="0" playsinline autoplay loop muted></video>
-            <figcaption>This is an auto-play video. I had to edit the CSS from the original form a little, added
-                <code>max-width: 100%</code> for the <code>video</code> tag.</figcaption>
-        </figure>
-    </div>
-    <div class="content">
-        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti
-            atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique
-            sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-        <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
-            optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est,
-            omnis dolor repellendus.</p>
-    </div>
-    <div class="footer">
-        <div class="content">
-            <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.
-                Delete these lines
-                when you use it, and don't forget to change the <code>title</code> tag!!!</p>
-        </div>
-    </div>
-</body>
-
+        
+        
 </html>
+<p></p>
+<p></p>
+<p></p>
