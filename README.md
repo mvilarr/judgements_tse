@@ -27,7 +27,7 @@
 <p><h2>What I learned</p></h2>
 <p>This was my first time using Datawrapper, and I initially struggled to choose the most effective visualizations. After reading Soma's tutorial, talking to TAs and asking classmates for feedback, I made some changes and I became much more comfortable with them.</p>
 <p>It was also my first time using GitHub to publish a personal project. Once I learned the workflow, it turned out to be much easier than I expected.</p>
-<p>Beyond that, I learned how to use Pandas for data analysis, how to adapt an HTML template into a project website, and how to build a complete data journalism project from data collection to publication, which felt like I had superpowers or something.</p>
+<p>Beyond that, I learned how to use Pandas for data analysis, how to adapt an HTML template into a project website, and how to build a complete data journalism project from data collection to publication, which felt like I had a superpower.</p>
 
 <p><h2>What I could have done better</h2></p>
 <p>Given more time, I would have improved the visual design of the charts by incorporating each political party's logo, colors, and typography, likely using Illustrator. I also would have liked to customize the website further, but I have limited front-end development experience, so I was not able to do within the available time. </p>
