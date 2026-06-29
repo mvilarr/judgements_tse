@@ -20,7 +20,7 @@
 <p><h2>Overview of the data analysis process</h2></p>
 <p>Looking back, I spent too much time exploring the dataset in Pandas without a clear analytical plan. I realized later that I could have structured the code more efficiently by grouping the data by political party from the beginning instead of repeating similar operations for each analysis.
 <p>I also encountered some technical challenges when importing the CSV file, such as identifying the correct encoding and delimiter. </p>
-<p>Functions like unique() helped me understand the categorical variables, while groupby() became the foundation of most of the analysis</p>.
+<p>Functions like unique() helped me understand the categorical variables, while groupby() became the foundation of most of the analysis.</p>
 <p>Another challenge emerged after I thought I had finished the analysis. Several political parties had merged, dissolved, or changed their names over time. To address this, I produced two versions of the analysis: one preserving the historical party names and another using the current party names.</p>
 <p>Only later did I realize that it would also be interesting to analyze how long the court takes to rule on each financial report</p>
 
