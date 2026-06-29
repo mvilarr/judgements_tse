@@ -1,4 +1,4 @@
-<h1>An analysis of how Brazil's Superior Electoral Court (TSE) judges political parties' financial reports</h1>
+<h1>An analysis of how Brazil's Superior Electoral Court judges political parties' financial reports</h1>
 
 <h2>What is this</h2>
 
